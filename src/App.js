@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Accordion from "./components/Accordion";
+import Counter from "./components/Counter";
+import UseStateWithArrays from "./components/UseStateWithArrays";
+import UseStateWithObject from "./components/UseStateWithObject";
+const items = [
+  {
+    title: "What is React?",
+    content: "React is front end javascript framework",
+  },
+  {
+    title: "Why use React?",
+    content: "React is favourite JS library among engineers",
+  },
+  {
+    title: "How do you use React?",
+    content: "By creating components",
+  },
+];
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Accordion items={items} />
+      <Counter />
+      <UseStateWithObject />
+      <UseStateWithArrays/>
     </div>
   );
 }
