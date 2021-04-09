@@ -2,6 +2,7 @@ import Accordion from "./components/Accordion";
 import Counter from "./components/Counter";
 import UseStateWithArrays from "./components/UseStateWithArrays";
 import UseStateWithObject from "./components/UseStateWithObject";
+import CountWithuseReducer from "./components/CountWithuseReducer";
 const items = [
   {
     title: "What is React?",
@@ -22,7 +23,8 @@ function App() {
       <Accordion items={items} />
       <Counter />
       <UseStateWithObject />
-      <UseStateWithArrays/>
+      <UseStateWithArrays />
+      <CountWithuseReducer />
     </div>
   );
 }
