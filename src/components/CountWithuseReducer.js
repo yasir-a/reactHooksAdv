@@ -16,6 +16,8 @@ const reducer = (state, action) => {
 
 const CountWithuseReducer = () => {
   const [count, dispatch] = useReducer(reducer, initialState);
+  const a = useReducer(0);
+  console.log("Use reducer", a);
   return (
     <div>
       <h1>{count}</h1>
